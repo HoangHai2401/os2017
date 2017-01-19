@@ -1,0 +1,50 @@
++Trinh Hoang Hai
++ID USTHBI6-047
++class ICT gen6
++
++1. echo hello world
++hello world
++
++2.passwd
++(current) UNIX password:
++
++3.date
++Thu Jan 19 22:20:16 DST 2017
++
++4.hostname
++TENTHEDNAOCHADC
++
++5.arch
++x86_64
++
++6.uname -a
++Linux TENTHEDNAOCHADC 3.4.0+ #1 PREEMPT Thu Aug 1 17:06:05 CST 2013 x86_64 x86_64 x86_64 GNU/Linux
++
++7.dmesg
++dmesg: klogctl failed: Function not implemented
++
++8.uptime
++ 22:25:51 up 11 min,  0 users,  load average: 0.52, 0.58, 0.59
++
++9.who am i
++(nothing)
++
++10.whoami
++lxrun
++
++11.who
++(nothing)
++
++12.id
++uid=1000(lxrun) gid=1000(lxrun) groups=1000(lxrun),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev)
++
++13.last
++wtmp begins Wed Sep 14 03:43:42 2016
++
++14.finger
++The program 'finger' is currently not installed. You can install it by typing:
++sudo apt-get install finger
++
++15.w
++ 22:39:28 up 25 min,  0 users,  load average: 0.52, 0.58, 0.59
++USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
