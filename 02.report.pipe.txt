@@ -1,0 +1,25 @@
++Trinh Hoang Hai
++USTHBI6-047
++class: ICT gen6
++
++#ls | grep "list"
++list
++
++#wc /etc/passwd
++  25   30 1201 /etc/passwd
++
++#free
++             total       used       free     shared    buffers     cached
++Mem:       8292256    4241012    4051244      17720      34032     188576
++-/+ buffers/cache:    4018404    4273852
++Swap:      1310720      35788    1274932
++
++#cat /proc/cpuinfo | grep processor
++processor       : 0
++processor       : 1
++processor       : 2
++processor       : 3
++
++#find /home/TENTHEDNAOCHADC/Downloads/Pictures | grep ".jpg" | wc -l
++0
++
