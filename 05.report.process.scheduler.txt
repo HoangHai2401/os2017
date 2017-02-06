@@ -1,0 +1,10 @@
++# /proc/sched_debug | grep "systemd"
++		   
++		              	task      PID           tree-key  switches  		  prio          wait-time         sum-exec       sum-sleep
++         systemd     1       279.291480      1113    	120        21.0493362       445.129589   512484.224296 0 0 /autogroup-2
++
++# /proc/1/sched | grep "switches"
++
++nr_switches                            :                 2321                 
++nr_voluntary_switches                  :                 1520
++nr_involuntary_switches                :                  388
