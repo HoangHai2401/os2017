@@ -31,10 +31,6 @@
 +       return i;
 +}
 +
-+void log_val() {
-+       printf("first = %d last =%d\n,first,last);
-+}
-+
 +int main() {
 +     item item_x;
 +     item_x.type = '1';
@@ -43,7 +39,7 @@
 +
 +     printf("\Producing item x: type=%c amount=%d unit=%c\n",item_x.type,item_x.amount,item_x.unit);
 +     produce(&item_x);
-+     log_val();
++     printf("first = %d last =%d\n,first,last);
 +
 +     item item_y;
 +     item_y.type = '0';
@@ -52,10 +48,10 @@
 +
 +     printf("\Producing item y: type=%c amount=%d unit=%c\n",item_y.type,item_y.amount,item_y.unit);
 +     produce(&item_y);
-+     log_val();
++     printf("first = %d last =%d\n,first,last);
 +     
 +     printf("\nAfter consumed once:\n");
 +     consume();
-+     log_val();
++     printf("first = %d last =%d\n,first,last);
 +}
 +
