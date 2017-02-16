@@ -7,7 +7,7 @@
 +typedef struct {
 +     char type;
 +     int amount;
-+     chả unit;
++     char unit;
 +}item;
 +
 +item bufer[BUFFER_SIZE];
@@ -37,7 +37,7 @@
 +     item_x.amount = 0;
 +     item_x.unit = '1';
 +
-+     printf("\Producing item x: type=%c amount=%d unit=%c\n",item_x.type,item_x.amount,item_x.unit);
++     printf("Producing item x: type=%c amount=%d unit=%c\n",item_x.type,item_x.amount,item_x.unit);
 +     produce(&item_x);
 +     printf("first = %d last =%d\n,first,last);
 +
