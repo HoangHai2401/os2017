@@ -31,3 +31,50 @@
 +       return i;
 +}
 +
++void *produce(void *param){
++     item x, y, z;
++     x.type = '1';
++     x.amount =2;
++     x.unit = '1';
++
++     y.type = '0';
++     y.amount =5;
++     y.unit = '0';
++
++     z.type = '0';
++     z.amount =8;
++     z.unit = '1';
++
++     printf("Producing item x: type=%c amount=%d unit=%c\n",x.type,x.amount,x.unit);
++     produce(&x);
++     printf("Produced item x: first = %d last =%d\n",first,last);
++     printf("Producing item y: type=%c amount=%d unit=%c\n",y.type,y.amount,y.unit);
++     produce(&y);
++     printf("Produced item y: first = %d last =%d\n",first,last);
++     printf("Producing item z: type=%c amount=%d unit=%c\n",z.type,z.amount,z.unit);
++     produce(&z);
++     printf("Produced item z: first = %d last =%d\n",first,last);
++}
++
++void *consume(void *param){
++
++     printf("Consume first production:\n");
++     consume();
++     printf("Consumed :first = %d last =%d\n,first,last);
++     printf("Consume second production:\n");
++     consume();
++     printf("Consumed :first = %d last =%d\n,first,last);
++     printf("Consume third production:\n");
++     consume();
++     printf("Consumed :first = %d last =%d\n,first,last);
++}
++
++int main(){
++     pthread_t p1, c1;  
++     pthread_create(&p1, NULL, produce, NULL);
++     pthread_join(p1, NULL);
++     pthread_create(&c1, NULL, consume, NULL);
++     pthread_join(c1, NULL);
++     return 0;
++}
++
