@@ -3,6 +3,7 @@
 +
 +int main(){
 +     print("Main before fork()\n");
++
 +     int pidps = fork();
 +     if (pidps == 0){
 +           printf("\nIm child after fork(), lauching ps -ef\n");
@@ -21,5 +22,6 @@
 +           printf("Finished launching free -h\n");
 +     }
 +     else printf("\nIm parent after fork(), child is %d\n", pidfree);
++
 +     return 0;
 +}
